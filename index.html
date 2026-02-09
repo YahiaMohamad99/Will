@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Marry Me 💖</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #ffb6c1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .box {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 25px;
+      text-align: center;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #e91e63;
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      position: relative;
+      height: 70px;
+    }
+
+    button {
+      padding: 12px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+
+    #yesBtn {
+      background-color: #e91e63;
+      color: white;
+    }
+
+    #noBtn {
+      background-color: #ccc;
+      position: absolute;
+      left: 55%;
+      top: 0;
+    }
+
+    .celebrate {
+      display: none;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 15px;
+    }
+
+    .final-text {
+      font-size: 18px;
+      color: #e91e63;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Box 1 -->
+  <div class="box" id="questionBox">
+    <h1>Will you marry me my baby 💍</h1>
+
+    <div class="buttons">
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+  </div>
+
+  <!-- Box 2 -->
+  <div class="box celebrate" id="celebrateBox">
+    <video autoplay loop muted playsinline>
+      <source src="https://rr1---sn-hgn7rnls.googlevideo.com/videoplayback?expire=1770691559&ei=h0eKaeC1LJDzy_sPksTZoQ4&ip=190.24.102.168&id=o-AFxSNbVIPnVHratRkJs50xZbhjI4tPA00nNMnZXBn4LM&itag=18&mime=video/mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+
+    <div class="final-text">
+      this is the best answer eveeeeeeeeeeeer 💖🎉
+    </div>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+    const yesBtn = document.getElementById("yesBtn");
+    const questionBox = document.getElementById("questionBox");
+    const celebrateBox = document.getElementById("celebrateBox");
+
+    function moveNoButton() {
+      const container = document.querySelector(".buttons");
+      const maxX = container.clientWidth - noBtn.offsetWidth;
+      const maxY = container.clientHeight - noBtn.offsetHeight;
+
+      const x = Math.random() * maxX;
+      const y = Math.random() * maxY;
+
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+    }
+
+    // Desktop
+    noBtn.addEventListener("mouseenter", moveNoButton);
+
+    // Mobile (touch)
+    noBtn.addEventListener("touchstart", (e) => {
+      e.preventDefault();
+      moveNoButton();
+    });
+
+    yesBtn.addEventListener("click", () => {
+      questionBox.style.display = "none";
+      celebrateBox.style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
