@@ -1,138 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Will You Marry Me 💖</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Marry Me 💖</title>
 
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background-color: #ffb6c1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #ffb6c1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
 
-    .box {
-      background: white;
-      padding: 30px 20px;
-      border-radius: 25px;
-      text-align: center;
-      width: 100%;
-      max-width: 420px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    }
+        .box {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 25px;
+            text-align: center;
+            width: 100%;
+            max-width: 420px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
 
-    h1 {
-      color: #e91e63;
-      font-size: 24px;
-      margin-bottom: 25px;
-    }
+        h1 {
+            color: #e91e63;
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
 
-    .buttons {
-      position: relative;
-      height: 70px;
-    }
+        .buttons {
+            width: 50%;
+            margin:  0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            height: 70px;
+        }
 
-    button {
-      padding: 12px 28px;
-      font-size: 18px;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      touch-action: manipulation;
-    }
+        button {
+            padding: 12px 28px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            touch-action: manipulation;
+        }
 
-    #yesBtn {
-      background-color: #e91e63;
-      color: white;
-    }
+        #yesBtn {
+            background-color: #e91e63;
+            color: white;
+        }
 
-    #noBtn {
-      background-color: #ccc;
-      position: absolute;
-      left: 55%;
-      top: 0;
-    }
+        #noBtn {
+            background-color: #ccc;
+            position: absolute;
+            /* left: 70%; */
+            top: 57%;
+            right: 20%;
+        }
 
-    .celebrate {
-      display: none;
-    }
+        .celebrate {
+            display: none;
+        }
 
-    video {
-      width: 100%;
-      border-radius: 20px;
-      margin-bottom: 15px;
-    }
+        video {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
 
-    .final-text {
-      font-size: 18px;
-      color: #e91e63;
-      font-weight: bold;
-    }
-  </style>
+        .final-text {
+            font-size: 18px;
+            color: #e91e63;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- Box 1 -->
-  <div class="box" id="questionBox">
-    <h1>Will you marry me my baby 💍</h1>
+    <!-- Box 1 -->
+    <div class="box" id="questionBox">
+        <h1>Will you marry me my baby 💍</h1>
 
-    <div class="buttons">
-      <button id="yesBtn">Yes</button>
-      <button id="noBtn">No</button>
+        <div class="buttons">
+            <button id="yesBtn">Yes</button>
+            <button id="noBtn">No</button>
+        </div>
     </div>
-  </div>
 
-  <!-- Box 2 -->
-  <div class="box celebrate" id="celebrateBox">
-    <video autoplay loop muted playsinline>
-      <source src="https://rr1---sn-hgn7rnls.googlevideo.com/videoplayback?expire=1770691559&ei=h0eKaeC1LJDzy_sPksTZoQ4&ip=190.24.102.168&id=o-AFxSNbVIPnVHratRkJs50xZbhjI4tPA00nNMnZXBn4LM&itag=18&mime=video/mp4" type="video/mp4">
-      Your browser does not support video.
-    </video>
+    <!-- Box 2 -->
+    <div class="box celebrate" id="celebrateBox">
+        <video autoplay loop muted playsinline>
+            <source
+                src="https://rr1---sn-hgn7rnls.googlevideo.com/videoplayback?expire=1770691559&ei=h0eKaeC1LJDzy_sPksTZoQ4&ip=190.24.102.168&id=o-AFxSNbVIPnVHratRkJs50xZbhjI4tPA00nNMnZXBn4LM&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AW-iu_rf2WL2rTYkS3NPyLGOTLbvZ9fEa5NlY0HnqU19yFPIvBUoyxMruPyqoXIWgw2PtEEn9rrbhy0U&spc=q5xjPHnHJqb91U6Jp44w0Kbaa7GjwW8DwptS6OSN4afYQous1EkwGBf9-Z5b3kb2E2C-d34QrgMNNuuR8I76sdZsUeU&vprv=1&svpuc=1&mime=video%2Fmp4&ns=dcDjFoBQlt-48vuRLvCKnvES&rqh=1&gir=yes&clen=1053791&ratebypass=yes&dur=27.492&lmt=1746406209574475&fexp=51331020,51552689,51565115,51565681,51580968&c=MWEB&sefc=1&txp=5319224&n=kAoUIrlQNdzyYQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJEij0EwRgIhAPRQBxQbzYwALGTzRGnUj8ifm0dnGHsRZFXhftm3G8O1AiEAn9PXXqF-zL4W2G49KROORwzwRLi8lw16zuN0Hzuf3xk%3D&title=%D9%85%D8%AF%D8%AD%D8%AA%20%D8%B4%D9%84%D8%A8%D9%8A%20%D8%A7%D9%84%D9%84%D9%87%20%D9%8A%D8%A7%20%D8%A8%D9%84%D8%AF%D9%86%D8%A7%20%D8%A7%D9%84%D9%84%D9%87%20%D8%A8%D9%83%D9%8A%20%F0%9F%98%AD&rm=sn-xuc-cvbk7s,sn-cvbee7s&rrc=79,104&req_id=a7c36aa38f37a3ee&cmsv=e&rms=rdu,au&redirect_counter=2&cms_redirect=yes&ipbypass=yes&met=1770669970,&mh=U5&mip=5.37.98.50&mm=29&mn=sn-hgn7rnls&ms=rdu&mt=1770669470&mv=m&mvi=1&pl=20&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgOnBE5NHL0az0O61QmMsenx5M0W8_zs42S-f5s0pW7bcCIDKd3hNTRZfnxjL_9srq7X3Fsgk4X3EHY-QAk5nAtz0x"
+                type="video/mp4">
+            Your browser does not support video.
+        </video>
 
-    <div class="final-text">
-      this is the best answer eveeeeeeeeeeeer 💖🎉
+        <div class="final-text">
+            This is the best answer eveeeeeeeeeeeer 💖🎉
+            بحبك يا شرووووووق
+        </div>
     </div>
-  </div>
 
-  <script>
-    const noBtn = document.getElementById("noBtn");
-    const yesBtn = document.getElementById("yesBtn");
-    const questionBox = document.getElementById("questionBox");
-    const celebrateBox = document.getElementById("celebrateBox");
+    <script>
+        const noBtn = document.getElementById("noBtn");
+        const yesBtn = document.getElementById("yesBtn");
+        const questionBox = document.getElementById("questionBox");
+        const celebrateBox = document.getElementById("celebrateBox");
 
-    function moveNoButton() {
-      const container = document.querySelector(".buttons");
-      const maxX = container.clientWidth - noBtn.offsetWidth;
-      const maxY = container.clientHeight - noBtn.offsetHeight;
+        function moveNoButton() {
+            const container = document.querySelector(".buttons");
+            const maxX = container.clientWidth - noBtn.offsetWidth;
+            const maxY = container.clientHeight - noBtn.offsetHeight;
 
-      const x = Math.random() * maxX;
-      const y = Math.random() * maxY;
+            const x = Math.random() * 10*maxX;
+            const y = Math.random() * 10* maxY;
 
-      noBtn.style.left = x + "px";
-      noBtn.style.top = y + "px";
-    }
+            noBtn.style.right = x + "px";
+            noBtn.style.top = y + "px";
+        }
 
-    // Desktop
-    noBtn.addEventListener("mouseenter", moveNoButton);
+        // Desktop
+        noBtn.addEventListener("mouseenter", moveNoButton);
 
-    // Mobile (touch)
-    noBtn.addEventListener("touchstart", (e) => {
-      e.preventDefault();
-      moveNoButton();
-    });
+        // Mobile (touch)
+        noBtn.addEventListener("touchstart", (e) => {
+            e.preventDefault();
+            moveNoButton();
+        });
 
-    yesBtn.addEventListener("click", () => {
-      questionBox.style.display = "none";
-      celebrateBox.style.display = "block";
-    });
-  </script>
+        yesBtn.addEventListener("click", () => {
+            questionBox.style.display = "none";
+            celebrateBox.style.display = "block";
+        });
+    </script>
 
 </body>
+
 </html>
